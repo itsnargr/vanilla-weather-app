@@ -9,14 +9,56 @@
      rel="stylesheet" 
      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous">
-
-
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="container">
-        
+        <div class="weather-app">
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="City"
+            autofocus="on"
+            class="search-bar"
+            id="input-city"
+            autocomplete="off"
+          />
+            <input type="submit" value="Search" class="btn btn-secondary" />
+          
+        </form>
 
-    </div>
+       <div class="row">
+           
+           <ul class="info">
+        <li id="city">Tokyo</li>
+              <li id="date">August 14</li>
+              <li id="day-and-time">Sunday 20:58</li>
+            </ul>
+       
+       </div>
+     <div class="row">
+
+          <div class="col-6">
+
+            <div class="clearfix weather-display">
+ <span id="current-temperature">21</span>
+                <span class="units">
+                    <a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+                <div id="current-weather">Rainy</div>
+          </div>
+          </div>
+              <div class="col-6">
+                <ul class="additional-info">
+                <li>Humidity: <span id="humidity">98</span>%</li>
+                  <li>Wind: <span id="wind">1</span> km/hr</li>
+                  <li>23°C | 21°C</li>
+                </ul>
+              </div>
+        </div>
+</div>
+</div>
     <script src="src/app.js">
 </script>
 </body>

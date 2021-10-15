@@ -1,0 +1,39 @@
+.info {
+
+  line-height: 32px;
+  list-style-type: none;
+  padding: 0px;
+  font-size: 20px;
+}
+
+.weather-app {
+
+  max-width: 600px;
+
+  border-radius: 16px;
+
+  padding: 40px;
+
+  box-shadow: 0px 30px 50px rgba(0 0 0 / 80%);
+
+background: linear-gradient(111.5deg, rgb(187, 232, 255) 11.1%, rgb(4, 78, 116) 107.5%);
+
+  margin: 30px auto;
+
+  display: block;
+
+}
+.additional-info{
+
+  line-height: 32px;
+  list-style-type: none;
+  padding: 0px;
+  font-size: 20px;  
+}
+
+#current-temperature {
+    font-size: 40px;
+}
+#current-weather{
+    font-size: 30px;
+}
