@@ -15,6 +15,7 @@ let temperatureElement = document.querySelector("#current-temperature");
   let cityElement=document.querySelector("#city");
   cityElement.innerHTML = response.data.name;
     let iconElement = document.querySelector("#icon");
+    getForecast(response.data.coord);
 
     iconElement.setAttribute(
       "src",
@@ -59,6 +60,13 @@ let days = [
 let day = days[now.getDay()];
 let date = document.querySelector("#day");
 date.innerHTML = ` ${day}`;
+function formatDays(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
 function showDailyForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
