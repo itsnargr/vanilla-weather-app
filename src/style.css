@@ -15,9 +15,7 @@
   padding: 40px;
 
   box-shadow: 0px 30px 50px rgba(0 0 0 / 80%);
-
-background: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
-
+background: radial-gradient(circle at 0.7% 1%, rgb(215, 248, 247) 0%, rgb(102, 188, 239) 100.2%);
   margin: 30px auto;
 
   display: block;
@@ -40,7 +38,7 @@ background: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
 .daily-forecast {
   text-align: center;
   border-radius: 16px;
-  background-color: rgba(3, 87, 117, 0.3);
+  background-color:#c7eeff;
   box-shadow: 0px 30px 50px rgba(0 0 0 / 80%);
   padding: 30px;
 }
