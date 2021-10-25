@@ -5,7 +5,8 @@ function displayTemperature (response){
 let temperatureElement = document.querySelector("#current-temperature");
  celsiusTemperature = response.data.main.temp;
 
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+let newTemp = Math.round(celsiusTemperature);
+temperatureElement.innerHTML = `${newTemp} °C`;
   let humidityElement =document.querySelector("#humidity");
   humidityElement.innerHTML = response.data.main.humidity;
   let windElement=document.querySelector("#wind");
@@ -38,9 +39,10 @@ function handleSubmitButton (event){
     let cityElement =document.querySelector("#input-city").value;
     searchCity(cityElement);
 }
-let searchForm = document.querySelector("#search-form");
 
-searchForm.addEventListener("submit", handleSubmitButton);
+
+
+
 
 searchCity(city);
 let now = new Date();
